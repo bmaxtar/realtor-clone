@@ -34,7 +34,8 @@ export default function Login() {
       }
 
     } catch (error) {
-      toast.error("Bad user credentials", error)
+      const errorMessage = error.message;
+      toast.error("Bad user credentials", errorMessage)
     }
   }
 
